@@ -1,0 +1,8 @@
+to start website 
+use --> python -m http.server
+----
+
+if not work use ---> python -m http.server 8000
+
+then website will be alive on 
+http://localhost:8000/

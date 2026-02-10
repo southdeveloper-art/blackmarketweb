@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAK PEEK - BLACK MARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .promo-container {
+            text-align: center;
+            max-width: 1200px;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .promo-tag {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .promo-title {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .promo-item {
+            background: rgba(20, 20, 30, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1rem;
+            backdrop-filter: blur(10px);
+            transform: skew(-5deg);
+        }
+
+        .promo-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(188, 19, 254, 0.5);
+            box-shadow: 0 0 10px var(--primary);
+            animation: scan 3s linear infinite;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        .launch-btn {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 0 20px var(--primary-glow);
+            transition: all 0.3s;
+        }
+
+        .launch-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-bg">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+    </div>
+    <div class="scan-line"></div>
+
+    <div class="promo-container">
+        <div class="promo-tag">COMING SOON</div>
+        <h1 class="nav-brand" style="justify-content: center; margin-bottom: 2rem;">
+            <img src='https://cdn.discordapp.com/attachments/1465664866064011347/1469776118251917555/323214-Photoroom.png?ex=6988e32d&is=698791ad&hm=2451673abafa6fba9dc06a5f754ac82fd25a49884037daad0474356b402a0979&'
+                alt='Logo' style='height: 80px; filter: drop-shadow(0 0 20px var(--primary));'>
+        </h1>
+        <h2 class="promo-title">THE NEW ERA<br>OF DIGITAL GOODS</h2>
+
+        <div class="promo-grid">
+            <div class="promo-item">
+                <img src="https://cdn.discordapp.com/attachments/1465664866064011347/1469766436699504971/39fb1671202f4e1cb7be1d7f.webp?ex=6988da29&is=698788a9&hm=c4dc8141feddc7b5f9ef513ecf157935b69c9ee5f442d4ae8bf6aef2293d9027&"
+                    alt="Amazon">
+            </div>
+            <div class="promo-item">
+                <img src="https://cdn.discordapp.com/attachments/1465664866064011347/1469766555578404924/53e0b51d67c0413c9f9be88a.avif?ex=6988da45&is=698788c5&hm=e7ec1eb10b90dc7971b8f5ceb468ea8d2f3bc4d248a22341bdd0a8d0022eeca9&"
+                    alt="Flipkart">
+            </div>
+            <div class="promo-item">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&q=80&w=300"
+                    alt="Netflix">
+            </div>
+            <div class="promo-item">
+                <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=300"
+                    alt="Spotify">
+            </div>
+        </div>
+
+        <p style="color: #ccc; margin-bottom: 3rem; font-size: 1.2rem;">
+            PREMIUM GIFT CARDS • GAMING CURRENCY • STREAMING ACCOUNTS
+        </p>
+
+        <a href="index.html" class="launch-btn">ENTER SITE</a>
+    </div>
+
+    <script>
+        // Matrix Rain Effect simpler version
+    </script>
+</body>
+
+</html>

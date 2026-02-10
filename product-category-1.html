@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category 1 - Black Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="animated-bg">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class='nav-brand'><img src='https://cdn.discordapp.com/attachments/1465664866064011347/1469776118251917555/323214-Photoroom.png?ex=6988e32d&is=698791ad&hm=2451673abafa6fba9dc06a5f754ac82fd25a49884037daad0474356b402a0979&' alt='Black Market Logo' class='brand-logo'><h1>BLACK MARKET</h1></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="giftcards.html" class="nav-link">Gift Cards</a></li>
+                <li><a href="gaming.html" class="nav-link">Gaming</a></li>
+                <li><a href="streaming.html" class="nav-link">Streaming</a></li>
+                <li><a href="social.html" class="nav-link">Social Media</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="brand-page-hero">
+        <div class="container">
+            <div class="brand-hero-icon">
+                <img src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&q=80&w=300"
+                    alt="Software" class="brand-img">
+            </div>
+            <h1 class="page-title">Premium Software</h1>
+            <p class="page-subtitle">Genuine License Keys & Tools</p>
+        </div>
+    </section>
+
+    <section class="products-page">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="status-badge status-in-stock">In Stock</span>
+                    <img src="https://images.unsplash.com/photo-1628277613967-6acca504800a?auto=format&fit=crop&q=80&w=400"
+                        alt="Windows 11" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">🪟 Windows 11 Pro</h3>
+                        <p class="product-description">Genuine Retail Key - Fast Delivery</p>
+                        <div class="product-price">₹599</div>
+                        <button class="product-button"
+                            onclick="openCheckout('Windows 11 Pro', '₹599', 'Software', 'https://images.unsplash.com/photo-1628277613967-6acca504800a?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <span class="status-badge status-in-stock">In Stock</span>
+                    <img src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&q=80&w=400"
+                        alt="MS Office" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">📑 MS Office 2021</h3>
+                        <p class="product-description">Professional Plus Edition - Lifetime</p>
+                        <div class="product-price">₹799</div>
+                        <button class="product-button"
+                            onclick="openCheckout('MS Office 2021', '₹799', 'Software', 'https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <span class="status-badge status-out-of-stock">Out of Stock</span>
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=400"
+                        alt="Antivirus" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">🛡️ Kaspersky Total</h3>
+                        <p class="product-description">1 Year Protection for 1 PC</p>
+                        <div class="product-price">₹399</div>
+                        <button class="product-button"
+                            onclick="openCheckout('Kaspersky Total', '₹399', 'Software', 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <span class="status-badge status-coming-soon">Coming Soon</span>
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=400"
+                        alt="VPN" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">🌐 NordVPN Premium</h3>
+                        <p class="product-description">Safe Browsing - Unlimited Access</p>
+                        <div class="product-price">₹899</div>
+                        <button class="product-button"
+                            onclick="openCheckout('NordVPN', '₹899', 'Software', 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <span class="status-badge status-in-stock">In Stock</span>
+                    <img src="https://images.unsplash.com/photo-1626908013351-800ddd734b8a?auto=format&fit=crop&q=80&w=400"
+                        alt="Adobe CC" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">🎨 Adobe All Apps</h3>
+                        <p class="product-description">Creative Cloud 1 Year Subscription</p>
+                        <div class="product-price">₹2,499</div>
+                        <button class="product-button"
+                            onclick="openCheckout('Adobe CC', '₹2499', 'Software', 'https://images.unsplash.com/photo-1626908013351-800ddd734b8a?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <span class="status-badge status-in-stock">In Stock</span>
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=400"
+                        alt="Windows 10" class="product-image">
+                    <div class="product-info-content">
+                        <h3 class="product-title">💻 Windows 10 Pro</h3>
+                        <p class="product-description">Genuine Retail Key - Lifetime</p>
+                        <div class="product-price">₹499</div>
+                        <button class="product-button"
+                            onclick="openCheckout('Windows 10 Pro', '₹499', 'Software', 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=400')">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-link" style="margin-top: 3rem; text-align: center;">
+                <a href="products.html" class="btn-secondary">← Back to Products</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class='footer-brand' style='display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;'><img src='https://cdn.discordapp.com/attachments/1465664866064011347/1469776118251917555/323214-Photoroom.png?ex=6988e32d&is=698791ad&hm=2451673abafa6fba9dc06a5f754ac82fd25a49884037daad0474356b402a0979&' alt='Logo' style='height: 30px; width: auto;'><h4 style='margin-bottom: 0;'>BLACK MARKET</h4></div>
+                    <p>Your trusted digital marketplace</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+                    <a href="https://discord.com/users/1253649531237564518" class="developer-badge" target="_blank">
+                        <img src="https://cdn.discordapp.com/avatars/1253649531237564518/d2e93a287d6c422eca40f0acac987ef7.webp?size=4096" alt="rocky.__.dev" class="dev-avatar">
+                        <div class="dev-text">
+                            <span class="dev-title">Web Site Developer</span>
+                            <span class="dev-name">rocky.__.dev</span>
+                        </div>
+                    </a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Black Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
